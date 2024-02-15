@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Calculator
 {
@@ -15,8 +15,9 @@ namespace Calculator
             Console.Clear();
 
             Console.WriteLine("Bem-vindo(a) a Calculator\n");
-            Console.WriteLine("1 - SOMA\n2 - SUBTRAÇÃO\n3 - DIVISÃO\n4 - MULTIPLICAÇÃO");
-            Console.Write("\nDigite a opçao  desejada: ");
+            Console.WriteLine("1 - SOMA\n2 - SUBTRAÇÃO\n3 - DIVISÃO\n4 - MULTIPLICAÇÃO\n5 - SAIR");
+            Console.WriteLine("-----------------");
+            Console.Write("\nDigite a opção  desejada: ");
             short opcao = short.Parse(Console.ReadLine());
             switch (opcao)
             {
@@ -34,6 +35,10 @@ namespace Calculator
 
                 case 4:
                     Multiplicacao();
+                    break;
+
+                case 5:
+                    System.Environment.Exit(0);
                     break;
 
                 default:
