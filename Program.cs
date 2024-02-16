@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics.SymbolStore;
 
 namespace Calculator
 {
@@ -39,6 +40,8 @@ namespace Calculator
 
         static void Soma()
         {
+            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("pt-br");
+
             Console.Clear();
 
             Console.Write("Digite um valor: ");
@@ -54,6 +57,8 @@ namespace Calculator
 
         static void Subtracao()
         {
+            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("pt-BR");
+
             Console.Clear();
 
             Console.Write("Digite um valor: ");
@@ -69,15 +74,17 @@ namespace Calculator
 
         static void Divisao()
         {
+            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("pt-BR");
+
             Console.Clear();
 
             Console.Write("Digite um valor: ");
-            float num1 = float.Parse(Console.ReadLine().Replace('.', ','));
+            decimal num1 = decimal.Parse(Console.ReadLine().Replace('.', ','));
             Console.Write("Digite outro valor: ");
-            float num2 = float.Parse(Console.ReadLine().Replace('.', ','));
-            float resultado = num1 / num2;
+            decimal num2 = decimal.Parse(Console.ReadLine().Replace('.', ','));
+            decimal resultado = num1 / num2;
             Console.WriteLine("----------------------------------");
-            Console.Write($"O resultado da divisão é: {resultado}");
+            Console.Write("O resultado da divisão é: " + Math.Round(resultado, 2)+".");
 
             Console.ReadKey();
 
@@ -85,6 +92,8 @@ namespace Calculator
 
         static void Multiplicacao()
         {
+            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("pt-BR");
+
             Console.Clear();
 
             Console.Write("Digite um valor: ");
@@ -123,6 +132,8 @@ namespace Calculator
 
         static void AumentoPercentual()
         {
+            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("pt-BR");
+
             Console.Clear();
 
             Console.Write("Digite o valor: ");
@@ -139,6 +150,8 @@ namespace Calculator
 
         static void DiminuicaoPercentual()
         {
+            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("pt-BR");
+
             Console.Clear();
 
             Console.Write("Digite o valor: ");
@@ -156,6 +169,8 @@ namespace Calculator
 
         static void ValorPorcentagem() 
         {
+            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("pt-BR");
+
             Console.Clear();
             
             Console.Write("Digite um valor: ");
