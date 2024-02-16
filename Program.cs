@@ -42,9 +42,9 @@ namespace Calculator
             Console.Clear();
 
             Console.Write("Digite um valor: ");
-            float num1 = float.Parse(Console.ReadLine());
+            float num1 = float.Parse(Console.ReadLine().Replace('.', ','));
             Console.Write("Digite outro valor: ");
-            float num2 = float.Parse(Console.ReadLine());
+            float num2 = float.Parse(Console.ReadLine().Replace('.', ','));
             float resultado = num1 + num2;
             Console.WriteLine("-------------------------------");
             Console.Write($"O resultado da soma é: {resultado}");
@@ -57,9 +57,9 @@ namespace Calculator
             Console.Clear();
 
             Console.Write("Digite um valor: ");
-            float num1 = float.Parse(Console.ReadLine());
+            float num1 = float.Parse(Console.ReadLine().Replace('.', ','));
             Console.Write("Digite outro valor: ");
-            float num2 = float.Parse(Console.ReadLine());
+            float num2 = float.Parse(Console.ReadLine().Replace('.', ','));
             float resultado = num1 - num2;
             Console.WriteLine("------------------------------------");
             Console.Write($"O resultado da subtração é: {resultado}");
@@ -72,9 +72,9 @@ namespace Calculator
             Console.Clear();
 
             Console.Write("Digite um valor: ");
-            float num1 = float.Parse(Console.ReadLine());
+            float num1 = float.Parse(Console.ReadLine().Replace('.', ','));
             Console.Write("Digite outro valor: ");
-            float num2 = float.Parse(Console.ReadLine());
+            float num2 = float.Parse(Console.ReadLine().Replace('.', ','));
             float resultado = num1 / num2;
             Console.WriteLine("----------------------------------");
             Console.Write($"O resultado da divisão é: {resultado}");
@@ -88,9 +88,9 @@ namespace Calculator
             Console.Clear();
 
             Console.Write("Digite um valor: ");
-            float num1 = float.Parse(Console.ReadLine());
+            float num1 = float.Parse(Console.ReadLine().Replace('.', ','));
             Console.Write("Digite outro valor: ");
-            float num2 = float.Parse(Console.ReadLine());
+            float num2 = float.Parse(Console.ReadLine().Replace('.', ','));
             float resultado = num1 * num2;
             Console.WriteLine("----------------------------------------");
             Console.Write($"O resultado da multiplicação é: {resultado}");
@@ -142,7 +142,7 @@ namespace Calculator
             Console.Clear();
 
             Console.Write("Digite o valor: ");
-            float num1 = float.Parse(Console.ReadLine());
+            float num1 = float.Parse(Console.ReadLine().Replace('.', ','));
             Console.Write("Digite a diminuição em porcentagem (SEM O SÍMBOLO -> %): ");
             float dimporc = float.Parse(Console.ReadLine().Replace('.', ','));
             float resporc = (num1 * dimporc) / 100;
@@ -159,9 +159,9 @@ namespace Calculator
             Console.Clear();
             
             Console.Write("Digite um valor: ");
-            float num1 = float.Parse(Console.ReadLine());
+            float num1 = float.Parse(Console.ReadLine().Replace('.', ','));
             Console.Write("Digite a porcentagem (SEM O SÍMBOLO -> %): ");
-            float valporc = float.Parse(Console.ReadLine());
+            float valporc = float.Parse(Console.ReadLine().Replace('.', ','));
             float resfinal = (num1 * valporc)/100;
             Console.WriteLine("---------------------------------------------");
             Console.WriteLine($"A porcentagem corresponde ao valor: {resfinal}");
